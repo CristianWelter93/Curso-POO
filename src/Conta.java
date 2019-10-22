@@ -3,14 +3,22 @@ public class Conta {
     private int agencia;
     private int numero;
     private Cliente titular;
+    private static int total;
+
+    public static int getTotal() {
+        return total;
+    }
 
     public Conta(){
+        total++;
 
     }
 
     public Conta(int agencia, int numero){
+        total++;
         this.agencia=agencia;
         this.numero=numero;
+
     }
 
     public double getSaldo() {

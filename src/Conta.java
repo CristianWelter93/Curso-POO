@@ -4,6 +4,15 @@ public class Conta {
     private int numero;
     private Cliente titular;
 
+    public Conta(){
+
+    }
+
+    public Conta(int agencia, int numero){
+        this.agencia=agencia;
+        this.numero=numero;
+    }
+
     public double getSaldo() {
         return saldo;
     }
